@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import {FormControl,MenuItem,Select} from '@material-ui/core';
+import {React,useEffect} from "react"
+// https://disease.sh/v3/covid-19/countries
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app_header">
+          <h1>Covid-19 Tracker</h1>
+        <FormControl className="app_dropdown">
+            <Select
+                variant = "outlined"
+                value = "abc"
+            >
+              {/*<MenuItem value="worldwide">worldwide</MenuItem>*/}
+              {/*<MenuItem value="worldwide">worldwide</MenuItem>*/}
+              {/*<MenuItem value="worldwide">worldwide</MenuItem>*/}
+              {/*<MenuItem value="worldwide">worldwide</MenuItem>*/}
+
+              {/*loop through all the countries */}
+
+            </Select>
+        </FormControl>
+        </div>
+
     </div>
   );
 }
